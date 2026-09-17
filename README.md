@@ -1,5 +1,14 @@
 # docker-tensorboard
 
+This repository builds a Docker image for TensorBoard 2.21.0
+based on the [PR95](https://github.com/conda-forge/tensorboard-feedstock/pull/95) 
+in the conda-forge tensorboard-feedstock. 
+
+The PR bumps TensorBoard from 2.20.0 to 2.21.0 which fixes the 
+> ModuleNotFoundError: No module named `pkg_resources` 
+
+error occurring with recent versions of `setuptools` (> 81.0.0).
+
 Build it with:
 
 ```bash
